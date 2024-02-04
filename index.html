@@ -4,49 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Site incroyable</title>
   </head>
   <body>
+    <header>
+      <h1><a href="index.html">Mon Site</a></h1>
+      <nav>
+          <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="swiper.html">Swiper</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+      </nav>
+    </header>
+
     <button id="theme">Dark mode</button>
-    <div class="message-error">
-      <h1>Une erreur est survenue lors de l'envoi du formulaire</h1>
+    <div class="error">
+      <ul>Une erreur est survenue lors de l'envoi du formulaire</ul>
     </div>
-    <div class="message-success">
-      <h1>Votre formulaire a bien été envoyé</h1>
+    <div class="success">
+      <ul>Votre formulaire a bien été envoyé</ul>
     </div>
     <form id="formulaire">
       <div>
-        <label for="nom">Nom</label>
-        <input type="text" name="nom" id="nom"  autocomplete="name"/>
-      </div>
-      <div>
-        <label for="prenom">Prénom</label>
-        <input type="text" name="prenom" id="prenom" autocomplete="name"/>
+        <label for="pseudo">Pseudo</label>
+        <input type="text" name="prenom" id="prenom" />
       </div>
       <div>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" autocomplete="email" />
+        <input type="email" name="email" id="email" />
       </div>
       <div>
-        <label for="radio1">Homme :</label>
+        <label for="radios">Radio 1 :</label>
         <input type="radio" name="radios" id="radio1" value="radio1" />
-        <label for="radio2">Femme :</label>
+        <label for="radio1">Radio 2 :</label>
         <input type="radio" name="radios" id="radio2" value="radio2" />
-        <label for="radio3">Autre :</label>
+        <label for="radio2">Radio 3</label>
         <input type="radio" name="radios" id="radio3" value="radio3" />
-      </div>>
+      </div>
       <div>
         <label for="axe">Mon axe :</label>
         <select name="axe" id="axe">
           <option value="">Choisir mon axe</option>
-          <option value="axe1">Coding</option>
-          <option value="axe2">Jeux-video</option>
-          <option value="axe3">3D</option>
+          <option value="axe1">Game design</option>
+          <option value="axe2">3d</option>
+          <option value="axe3">Marketing</option>
         </select>
       </div>
-    <div>
-        <button>Envoyer</button>
-    </div>
+      <button id="submit">Envoyer</button>
     </form>
     <script src="script.js"></script>
   </body>
